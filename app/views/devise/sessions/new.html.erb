@@ -1,43 +1,27 @@
 <div class="form">
+
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <h2>Sign in</h2>
-    <br>
-    <div class="group">
-      <input type="email"><span class="highlight"></span><span class="bar"></span>
-      <%= f.email_field :email, autofocus: true %>
-      <%= f.label :email %><br />
-    </div>
-    <br>
-    <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password, autocomplete: "off" %>
-    </div>
-    <br>
-    <% if devise_mapping.rememberable? -%>
-      <div class="field">
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember_me %>
-      </div>
-    <% end -%>
-    <br>
-    <div class="actions">
-      <%= f.submit "Log in" %>
-    </div>
-  <% end %> 
+
 
 <form>
+
   <div class="group">
-    <input type="email"><span class="highlight"></span><span class="bar"></span>
+    <input id="user_email" name="user[email]" type="email" readonly onfocus="this.removeAttribute('readonly');"><span class="highlight"></span><span class="bar"></span>
     <label>Email</label>
   </div>
 
   <div class="group">
-    <input type="password"><span class="highlight"></span><span class="bar"></span>
+    <input id="user_password" name="user[password]" type="password" readonly onfocus="this.removeAttribute('readonly');"><span class="highlight"></span><span class="bar"></span>
     <label>Password</label>
   </div>
-  <button type="button" class="button buttonBlue">Sign in
-    <div class="ripples buttonRipples"><input name="commit" type="submit" value="Create" /><span class="ripplesCircle"></span></div>
+  <button name="commit" type="submit" class="button buttonBlue" value ="Create Session">Sign in
+    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
   </button>
 </form>
 
+  <% end %> 
+
+
+
 </div>
+
