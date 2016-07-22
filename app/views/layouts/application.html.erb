@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AirQuotes</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <link href="https://fonts.googleapis.com/css?family=Cardo:400,400i,700|Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="navlinks">
+<br>
+	<nav>
+	
+		<% if user_signed_in? %>
+			<a href="/"><span id="logo">Q</span></a>
+			<span class="navLinks">
+				<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+			</span>
+		<% elsif current_page?(root_path)  %>
+			<span class="navLinks">
+				<%= link_to 'Sign up', new_user_registration_path %>
+				 | 
+				<%= link_to 'Sign in', new_user_session_path %>				
+			</span>
+		<% else %>
+			<a href="#"><span id="logo">Q</span></a>
+			<span class="navLinks">
+				<%= link_to 'Sign up', new_user_registration_path %>
+				 | 
+				<%= link_to 'Sign in', new_user_session_path %>				
+			</span>
+		<% end %>
+	</nav>
+</div>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <% flash.each do |key, value| %>
+  		<%= content_tag :div, value, :class => "flash #{key}" unless value.blank? %>
+	<% end %>
+	
+
+<%= yield %>
+
+</body>
+</html>
