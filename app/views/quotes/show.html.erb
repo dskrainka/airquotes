@@ -1,14 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @quote.content %>
-</p>
+	<div class="displayQuote">
+		<p>
+			<% @displayQuote = @quote %>
+			<%= @displayQuote.content %>
+			<br>
+    		<span><%= @displayQuote.attribution.rjust(1) %></span>		
+			<br></br>	
+			<span class="quoteLinks">
+				<%= link_to 'Edit', edit_quote_path(@quote) %> |
+				<%= link_to 'Back', quotes_path %>				
+			</span>
+		</p>
+	</div>
 
-<p>
-  <strong>Attribution:</strong>
-  <%= @quote.attribution %>
-</p>
 
-<%= link_to 'Edit', edit_quote_path(@quote) %> |
-<%= link_to 'Back', quotes_path %>

@@ -16,6 +16,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/*
+Original Blues:
+4a89dc
+357bd8
+
+Changed to:
+34495e
+2c3e50
+*/
+
 /* Change the white to any color ;) */
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
@@ -82,6 +92,9 @@ nav {
     transform: translate(-50%, -50%);
 	/* background-color: green; */
 }
+q {
+    quotes: "«" "»";
+}
 
 .displayQuote {
 	/* background-color: blue; */
@@ -90,6 +103,9 @@ nav {
 	font-size: 3em;
 	margin: auto;
 	background-color: white; 
+	quotes: "“" "”";
+	quotes: "«" "»";
+
 	/*height: 100%;*/
 }
 
@@ -103,10 +119,18 @@ nav {
           max-width: 75%;
 }
 
+
+
 .displayQuote p span {
 	font-style: italic;
 	font-size: 0.90em;
 }
+
+.displayQuote .quoteLinks {
+	font-style: normal;
+	font-size: 0.60em;
+}
+
 
 #logo {
 	font-family: 'Cardo', serif;
@@ -137,6 +161,64 @@ nav {
   	max-width: 75%;
 }
 
+textarea, 
+pre {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  resize: none;
+  text-align: center;
+}
+
+form {
+	position: absolute;
+    left: 50%;
+    top:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	/*width: 70vw;
+	/*display: flex;
+    /*align-items: center;*/
+    /*justify-content: center; */
+}
+
+.submit {
+	font-family: 'Cardo', serif;
+	position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+table, th, td {
+   border-bottom: 1px solid gray;
+   padding: 10px;
+}
+
+table {
+	border-top: 1px solid gray;
+    table-layout: fixed;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+td {
+    word-wrap:break-word
+}
+
+#spacer {
+	width: 10vw;
+}
+
+#tableQuote {
+	width: 50vw;
+}
+/*
+
 .form {
 	position: absolute;
     left: 50%;
@@ -147,10 +229,9 @@ nav {
 	display: flex;
     align-items: center;
     justify-content: center; 
-	/*background-color: blue;*/
 }
 
-/* Form Styling */
+/* Form Styling 
 
 * { box-sizing:border-box; }
 
@@ -201,7 +282,7 @@ input {
 input:focus { outline: none; }
 
 
-/* Label */
+/* Label
 
 label {
 	color: #999; 
@@ -215,17 +296,17 @@ label {
 }
 
 
-/* active */
+/* active 
 
 input:focus ~ label, input.used ~ label {
 	top: -20px;
   transform: scale(.75); left: -2px;
-	/* font-size: 14px; */
+	/* font-size: 14px; 
 	color: #4a89dc;
 }
 
 
-/* Underline */
+/* Underline 
 
 .bar {
 	position: relative;
@@ -248,12 +329,12 @@ input:focus ~ label, input.used ~ label {
 .bar:after { right: 50%; }
 
 
-/* active */
+/* active 
 
 input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
 
-/* Highlight */
+/* Highlight 
 
 .highlight {
 	position: absolute;
@@ -266,14 +347,14 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 }
 
 
-/* active */
+/* active 
 
 input:focus ~ .highlight {
 	animation: inputHighlighter 0.3s ease;
 }
 
 
-/* Animations */
+/* Animations 
 
 @keyframes inputHighlighter {
 	from { background: #4a89dc; }
@@ -281,7 +362,7 @@ input:focus ~ .highlight {
 }
 
 
-/* Button */
+/* Button 
 
 .button {
   position: relative;
@@ -305,7 +386,7 @@ input:focus ~ .highlight {
 .button:focus { outline: 0; }
 
 
-/* Button modifiers */
+/* Button modifiers 
 
 .buttonBlue {
   background: #4a89dc;
@@ -314,8 +395,7 @@ input:focus ~ .highlight {
 
 .buttonBlue:hover { background: #357bd8; }
 
-
-/* Ripples container */
+/* Ripples container 
 
 .ripples {
   position: absolute;
@@ -328,7 +408,7 @@ input:focus ~ .highlight {
 }
 
 
-/* Ripples circle */
+/* Ripples circle 
 
 .ripplesCircle {
   position: absolute;
@@ -347,7 +427,7 @@ input:focus ~ .highlight {
 }
 
 
-/* Ripples animation */
+/* Ripples animation 
 
 @keyframes ripples {
   0% { opacity: 0; }
@@ -388,3 +468,4 @@ footer img {
 footer img:hover { opacity: .83; }
 
 footer img:focus , footer a:focus { outline: none; }
+*/

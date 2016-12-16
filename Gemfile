@@ -13,9 +13,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'tzinfo-data'
+gem 'bcrypt'
 
 group :development, :test do
   gem 'byebug'
+end
+
+group :production do 
+	gem 'pg'
+	gem 'rails_12factor'
 end
 
 group :development do
