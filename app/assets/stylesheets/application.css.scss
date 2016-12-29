@@ -12,68 +12,56 @@
  *
  */
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
- 
+  
 @import "bootstrap-sprockets";
 @import "bootstrap";
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 /*
 Original Blues:
 4a89dc
 357bd8
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 Changed to:
 34495e
 2c3e50
 */
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 /* Change the white to any color ;) */
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
- 
+  
 a {
     color: black;
     text-decoration: none;
 }
- 
+  
 a:clicked {
     color: black;
 }
- 
+  
 a:hover {
     color: black;
     text-decoration: none;
 }
- 
+  
 html {
     height: 100%;
 }
 body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
- 
+  
     /*background-color: blue;*/
 }
- 
+  
 nav {
     width: 100%;
     /* background-color: orange; */
     padding-left: 50%;
   line-height: 2.5em;
 }
- 
+  
 .navLinks {
     /* padding-left: 80%; */
     /* background-color: blue; */
@@ -86,7 +74,7 @@ nav {
   /*line-height: 2.5em;*/
     /*text-align: right;*/
 }
- 
+  
 .title {
     font-family: 'Cardo', serif;
     font-weight: 700;
@@ -95,7 +83,7 @@ nav {
     /* background-color: blue; */
     height: 100%;
 }
- 
+  
 .title p {
     position: absolute;
     top: 50%;
@@ -107,8 +95,7 @@ nav {
 q {
     quotes: "«" "»";
 }
-<<<<<<< HEAD
- 
+  
 .displayQuote {
     /* background-color: blue; */
     font-family: 'Cardo', serif;
@@ -118,29 +105,10 @@ q {
     background-color: white; 
     quotes: "“" "”";
     quotes: "«" "»";
- 
+  
     /*height: 100%;*/
 }
- 
-=======
-q {
-    quotes: "«" "»";
-}
-
-.displayQuote {
-	/* background-color: blue; */
-	font-family: 'Cardo', serif;
-	font-weight: 400;
-	font-size: 3em;
-	margin: auto;
-	background-color: white; 
-	quotes: "“" "”";
-	quotes: "«" "»";
-
-	/*height: 100%;*/
-}
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 .displayQuote p {
           position: absolute;
           top: 50%;
@@ -150,36 +118,20 @@ q {
           text-align: center;
           max-width: 75%;
 }
-<<<<<<< HEAD
- 
- 
- 
-=======
-
-
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
+  
+  
 .displayQuote p span {
     font-style: italic;
     font-size: 0.90em;
 }
- 
+  
 .displayQuote .quoteLinks {
     font-style: normal;
     font-size: 0.60em;
 }
-<<<<<<< HEAD
- 
- 
-=======
-
-.displayQuote .quoteLinks {
-	font-style: normal;
-	font-size: 0.60em;
-}
-
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
+  
 #logo {
     font-family: 'Cardo', serif;
     font-weight: 400;
@@ -193,14 +145,13 @@ q {
     line-height:2.5em;
     top:5%;
     /*margin: auto;*/
- 
+  
     text-align: center;
- 
+  
     /* background-color: blue;*/
 }
- 
+  
 .buttons {
-<<<<<<< HEAD
     position:absolute;
     top: 90%;
     left: 50%;
@@ -209,18 +160,7 @@ q {
     text-align: center;
     max-width: 75%;
 }
- 
-=======
-	position:absolute;
-	top: 90%;
- 	left: 50%;
-  	margin-right: -50%;
-  	transform: translate(-50%, -50%);
-  	text-align: center;
-  	max-width: 75%;
-}
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 textarea, 
 pre {
   margin: 0;
@@ -230,62 +170,34 @@ pre {
   resize: none;
   text-align: center;
 }
-<<<<<<< HEAD
- 
+  
 form {
     position: absolute;
-=======
-
-form {
-	position: absolute;
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
     left: 50%;
     top:50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-<<<<<<< HEAD
     /*width: 70vw;
     /*display: flex;
     /*align-items: center;*/
     /*justify-content: center; */
 }
- 
+  
 .submit {
     font-family: 'Cardo', serif;
     position: absolute;
-=======
-	/*width: 70vw;
-	/*display: flex;
-    /*align-items: center;*/
-    /*justify-content: center; */
-}
-
-.submit {
-	font-family: 'Cardo', serif;
-	position: absolute;
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 table, th, td {
    border-bottom: 1px solid gray;
    padding: 10px;
 }
-<<<<<<< HEAD
- 
+  
 table {
     border-top: 1px solid gray;
-=======
-
-table {
-	border-top: 1px solid gray;
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
     table-layout: fixed;
     position: absolute;
     left: 50%;
@@ -293,37 +205,20 @@ table {
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
-<<<<<<< HEAD
- 
+  
 td {
     word-wrap:break-word
 }
- 
+  
 #spacer {
     width: 10vw;
 }
- 
+  
 #tableQuote {
     width: 50vw;
 }
 /*
- 
-=======
-
-td {
-    word-wrap:break-word
-}
-
-#spacer {
-	width: 10vw;
-}
-
-#tableQuote {
-	width: 50vw;
-}
-/*
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 .form {
     position: absolute;
     left: 50%;
@@ -335,34 +230,28 @@ td {
     align-items: center;
     justify-content: center; 
 }
-<<<<<<< HEAD
- 
+  
 /* Form Styling 
- 
-=======
-
-/* Form Styling 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 * { box-sizing:border-box; }
- 
+  
 body {
     font-family: Helvetica;
     background: #eee;
   -webkit-font-smoothing: antialiased;
 }
- 
+  
 hgroup { 
     text-align:center;
     margin-top: 4em;
 }
- 
+  
 h1, h3 { font-weight: 300; }
- 
+  
 h1 { color: #636363; }
- 
+  
 h3 { color: #4a89dc; }
- 
+  
 form {
     width: 380px;
     margin: 4em auto;
@@ -371,12 +260,12 @@ form {
     border: 1px solid #ebebeb;
     box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
 }
- 
+  
 .group { 
     position: relative; 
     margin-bottom: 45px; 
 }
- 
+  
 input {
     font-size: 18px;
     padding: 10px 10px 10px 5px;
@@ -389,13 +278,12 @@ input {
     border-radius: 0;
     border-bottom: 1px solid #757575;
 }
- 
+  
 input:focus { outline: none; }
-<<<<<<< HEAD
- 
- 
+  
+  
 /* Label
- 
+  
 label {
     color: #999; 
     font-size: 18px;
@@ -406,56 +294,26 @@ label {
     top: 10px;
     transition: all 0.2s ease;
 }
- 
- 
+  
+  
 /* active 
- 
-=======
-
-
-/* Label
-
-label {
-	color: #999; 
-	font-size: 18px;
-	font-weight: normal;
-	position: absolute;
-	pointer-events: none;
-	left: 5px;
-	top: 10px;
-	transition: all 0.2s ease;
-}
-
-
-/* active 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 input:focus ~ label, input.used ~ label {
     top: -20px;
   transform: scale(.75); left: -2px;
-<<<<<<< HEAD
     /* font-size: 14px; 
     color: #4a89dc;
 }
- 
- 
+  
+  
 /* Underline 
- 
-=======
-	/* font-size: 14px; 
-	color: #4a89dc;
-}
-
-
-/* Underline 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 .bar {
     position: relative;
     display: block;
     width: 100%;
 }
- 
+  
 .bar:before, .bar:after {
     content: '';
     height: 2px; 
@@ -465,20 +323,19 @@ input:focus ~ label, input.used ~ label {
     background: #4a89dc; 
     transition: all 0.2s ease;
 }
- 
+  
 .bar:before { left: 50%; }
- 
+  
 .bar:after { right: 50%; }
-<<<<<<< HEAD
- 
- 
+  
+  
 /* active 
- 
+  
 input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
- 
- 
+  
+  
 /* Highlight 
- 
+  
 .highlight {
     position: absolute;
     height: 60%; 
@@ -488,63 +345,25 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
     pointer-events: none;
     opacity: 0.5;
 }
- 
- 
+  
+  
 /* active 
- 
-=======
-
-
-/* active 
-
-input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
-
-
-/* Highlight 
-
-.highlight {
-	position: absolute;
-	height: 60%; 
-	width: 100px; 
-	top: 25%; 
-	left: 0;
-	pointer-events: none;
-	opacity: 0.5;
-}
-
-
-/* active 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 input:focus ~ .highlight {
     animation: inputHighlighter 0.3s ease;
 }
-<<<<<<< HEAD
- 
- 
+  
+  
 /* Animations 
- 
-=======
-
-
-/* Animations 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 @keyframes inputHighlighter {
     from { background: #4a89dc; }
     to  { width: 0; background: transparent; }
 }
-<<<<<<< HEAD
- 
- 
+  
+  
 /* Button 
- 
-=======
-
-
-/* Button 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 .button {
   position: relative;
   display: inline-block;
@@ -565,32 +384,19 @@ input:focus ~ .highlight {
   transition: all 0.15s ease;
 }
 .button:focus { outline: 0; }
-<<<<<<< HEAD
- 
- 
+  
+  
 /* Button modifiers 
- 
-=======
-
-
-/* Button modifiers 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 .buttonBlue {
   background: #4a89dc;
   text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
 }
- 
+  
 .buttonBlue:hover { background: #357bd8; }
-<<<<<<< HEAD
- 
+  
 /* Ripples container 
- 
-=======
-
-/* Ripples container 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 .ripples {
   position: absolute;
   top: 0;
@@ -600,17 +406,10 @@ input:focus ~ .highlight {
   overflow: hidden;
   background: transparent;
 }
-<<<<<<< HEAD
- 
- 
+  
+  
 /* Ripples circle 
- 
-=======
-
-
-/* Ripples circle 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 .ripplesCircle {
   position: absolute;
   top: 50%;
@@ -622,62 +421,51 @@ input:focus ~ .highlight {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.25);
 }
- 
+  
 .ripples.is-active .ripplesCircle {
   animation: ripples .4s ease-in;
 }
-<<<<<<< HEAD
- 
- 
+  
+  
 /* Ripples animation 
- 
-=======
-
-
-/* Ripples animation 
-
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
+  
 @keyframes ripples {
   0% { opacity: 0; }
- 
+  
   25% { opacity: 1; }
- 
+  
   100% {
     width: 200%;
     padding-bottom: 200%;
     opacity: 0;
   }
 }
- 
+  
 footer { text-align: center; }
- 
+  
 footer p {
     color: #888;
     font-size: 13px;
     letter-spacing: .4px;
 }
- 
+  
 footer a {
     color: #4a89dc;
     text-decoration: none;
     transition: all .2s ease;
 }
- 
+  
 footer a:hover {
     color: #666;
     text-decoration: underline;
 }
- 
+  
 footer img {
     width: 80px;
     transition: all .2s ease;
 }
- 
+  
 footer img:hover { opacity: .83; }
- 
+  
 footer img:focus , footer a:focus { outline: none; }
-<<<<<<< HEAD
 */
-=======
-*/
->>>>>>> 6ff9cc7286f50334f3894229099e9e626d481860
