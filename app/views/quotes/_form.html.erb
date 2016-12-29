@@ -12,12 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
+    <%= f.text_area(:content, :value => "\"\"", :class => "textareastyle") %>
   </div>
   <div class="field">
-    <%= f.label :attribution %><br>
-    <%= f.text_field :attribution %>
+    <%= f.text_area(:attribution, :value => "-", :class => "textareastyle") %>
   </div>
   <div class="actions">
     <%= f.submit %>
