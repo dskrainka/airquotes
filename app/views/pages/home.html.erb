@@ -6,14 +6,16 @@
 			<% @displayQuote = @quotes.sample %>
 			<%= @displayQuote.content %>
 			<br>
-    		<span>-<%= @displayQuote.attribution.rjust(1) %></span>			
+    		<span><%= @displayQuote.attribution.rjust(1) %></span>			
 		</p>
 	</div>
 
 	<div class="buttons">
-		<%= link_to root_path do %>
-    		<i class="glyphicon glyphicon-random">&nbsp;&nbsp;</i>
-		<% end %>
+		<a href="/"><i class="glyphicon glyphicon-random">&nbsp;&nbsp;</i></a>
+
+		<!-- %= link_to root_path do %>
+    		<i class="glyphicon glyphicon-random">&nbsp;&nbsp;</i -->
+		<!-- % end %-->
 
 		<%= link_to new_quote_path do %>
     		<i class="glyphicon glyphicon-plus">&nbsp;&nbsp;</i>
@@ -32,4 +34,3 @@
     </p>
   </div>
 <% end %>
-

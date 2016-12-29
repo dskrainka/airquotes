@@ -12,87 +12,103 @@
  *
  */
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
-
+ 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+ 
+/*
+Original Blues:
+4a89dc
+357bd8
+ 
+Changed to:
+34495e
+2c3e50
+*/
+ 
 /* Change the white to any color ;) */
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
-
+ 
 a {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
-
+ 
 a:clicked {
-	color: black;
+    color: black;
 }
-
+ 
 a:hover {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
-
+ 
 html {
-	height: 100%;
+    height: 100%;
 }
 body {
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-
-	/*background-color: blue;*/
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+ 
+    /*background-color: blue;*/
 }
-
+ 
 nav {
-	width: 100%;
-	/* background-color: orange; */
-	padding-left: 50%;
+    width: 100%;
+    /* background-color: orange; */
+    padding-left: 50%;
   line-height: 2.5em;
 }
-
+ 
 .navLinks {
-	/* padding-left: 80%; */
-	/* background-color: blue; */
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25em;
- 	margin-left: 10%;
+    /* padding-left: 80%; */
+    /* background-color: blue; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25em;
+    margin-left: 10%;
   position: absolute;
   right: 5%;
   top: 2.5%;
   /*line-height: 2.5em;*/
-	/*text-align: right;*/
+    /*text-align: right;*/
 }
-
+ 
 .title {
-	font-family: 'Cardo', serif;
-	font-weight: 700;
-	font-size: 10em;
-	margin: auto;
-	/* background-color: blue; */
-	height: 100%;
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    font-size: 10em;
+    margin: auto;
+    /* background-color: blue; */
+    height: 100%;
 }
-
+ 
 .title p {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-	/* background-color: green; */
+    /* background-color: green; */
 }
-
+q {
+    quotes: "«" "»";
+}
+ 
 .displayQuote {
-	/* background-color: blue; */
-	font-family: 'Cardo', serif;
-	font-weight: 400;
-	font-size: 3em;
-	margin: auto;
-	background-color: white; 
-	/*height: 100%;*/
+    /* background-color: blue; */
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-size: 3em;
+    margin: auto;
+    background-color: white; 
+    quotes: "“" "”";
+    quotes: "«" "»";
+ 
+    /*height: 100%;*/
 }
-
+ 
 .displayQuote p {
           position: absolute;
           top: 50%;
@@ -102,187 +118,252 @@ nav {
           text-align: center;
           max-width: 75%;
 }
-
+ 
+ 
+ 
 .displayQuote p span {
-	font-style: italic;
-	font-size: 0.90em;
+    font-style: italic;
+    font-size: 0.90em;
 }
-
+ 
+.displayQuote .quoteLinks {
+    font-style: normal;
+    font-size: 0.60em;
+}
+ 
+ 
 #logo {
-	font-family: 'Cardo', serif;
-	font-weight: 400;
-	font-size: 3em;
-	position:absolute;
-	 	left: 50%;
-  	margin-right: -50%;
-  	transform: translate(-50%, -50%);
-  	text-align: center;
-  	max-width: 75%;
-  	line-height:2.5em;
-  	top:5%;
-	/*margin: auto;*/
-
-	text-align: center;
-
-	/* background-color: blue;*/
+    font-family: 'Cardo', serif;
+    font-weight: 400;
+    font-size: 3em;
+    position:absolute;
+        left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 75%;
+    line-height:2.5em;
+    top:5%;
+    /*margin: auto;*/
+ 
+    text-align: center;
+ 
+    /* background-color: blue;*/
 }
-
+ 
 .buttons {
-	position:absolute;
-	top: 90%;
- 	left: 50%;
-  	margin-right: -50%;
-  	transform: translate(-50%, -50%);
-  	text-align: center;
-  	max-width: 75%;
+    position:absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 75%;
 }
-
-.form {
-	position: absolute;
+ 
+textarea, 
+pre {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  resize: none;
+  text-align: center;
+}
+ 
+form {
+    position: absolute;
     left: 50%;
     top:50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-	width: 70vw;
-	display: flex;
+    /*width: 70vw;
+    /*display: flex;
+    /*align-items: center;*/
+    /*justify-content: center; */
+}
+ 
+.submit {
+    font-family: 'Cardo', serif;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+ 
+table, th, td {
+   border-bottom: 1px solid gray;
+   padding: 10px;
+}
+ 
+table {
+    border-top: 1px solid gray;
+    table-layout: fixed;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+ 
+td {
+    word-wrap:break-word
+}
+ 
+#spacer {
+    width: 10vw;
+}
+ 
+#tableQuote {
+    width: 50vw;
+}
+/*
+ 
+.form {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    display: flex;
     align-items: center;
     justify-content: center; 
-	/*background-color: blue;*/
 }
-
-/* Form Styling */
-
+ 
+/* Form Styling 
+ 
 * { box-sizing:border-box; }
-
+ 
 body {
-	font-family: Helvetica;
-	background: #eee;
+    font-family: Helvetica;
+    background: #eee;
   -webkit-font-smoothing: antialiased;
 }
-
+ 
 hgroup { 
-	text-align:center;
-	margin-top: 4em;
+    text-align:center;
+    margin-top: 4em;
 }
-
+ 
 h1, h3 { font-weight: 300; }
-
+ 
 h1 { color: #636363; }
-
+ 
 h3 { color: #4a89dc; }
-
+ 
 form {
-	width: 380px;
-	margin: 4em auto;
-	padding: 3em 2em 2em 2em;
-	background: #fafafa;
-	border: 1px solid #ebebeb;
-	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+    width: 380px;
+    margin: 4em auto;
+    padding: 3em 2em 2em 2em;
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
 }
-
+ 
 .group { 
-	position: relative; 
-	margin-bottom: 45px; 
+    position: relative; 
+    margin-bottom: 45px; 
 }
-
+ 
 input {
-	font-size: 18px;
-	padding: 10px 10px 10px 5px;
-	-webkit-appearance: none;
-	display: block;
-	background: #fafafa;
-	color: #636363;
-	width: 100%;
-	border: none;
-	border-radius: 0;
-	border-bottom: 1px solid #757575;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    -webkit-appearance: none;
+    display: block;
+    background: #fafafa;
+    color: #636363;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #757575;
 }
-
+ 
 input:focus { outline: none; }
-
-
-/* Label */
-
+ 
+ 
+/* Label
+ 
 label {
-	color: #999; 
-	font-size: 18px;
-	font-weight: normal;
-	position: absolute;
-	pointer-events: none;
-	left: 5px;
-	top: 10px;
-	transition: all 0.2s ease;
+    color: #999; 
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: all 0.2s ease;
 }
-
-
-/* active */
-
+ 
+ 
+/* active 
+ 
 input:focus ~ label, input.used ~ label {
-	top: -20px;
+    top: -20px;
   transform: scale(.75); left: -2px;
-	/* font-size: 14px; */
-	color: #4a89dc;
+    /* font-size: 14px; 
+    color: #4a89dc;
 }
-
-
-/* Underline */
-
+ 
+ 
+/* Underline 
+ 
 .bar {
-	position: relative;
-	display: block;
-	width: 100%;
+    position: relative;
+    display: block;
+    width: 100%;
 }
-
+ 
 .bar:before, .bar:after {
-	content: '';
-	height: 2px; 
-	width: 0;
-	bottom: 1px; 
-	position: absolute;
-	background: #4a89dc; 
-	transition: all 0.2s ease;
+    content: '';
+    height: 2px; 
+    width: 0;
+    bottom: 1px; 
+    position: absolute;
+    background: #4a89dc; 
+    transition: all 0.2s ease;
 }
-
+ 
 .bar:before { left: 50%; }
-
+ 
 .bar:after { right: 50%; }
-
-
-/* active */
-
+ 
+ 
+/* active 
+ 
 input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
-
-
-/* Highlight */
-
+ 
+ 
+/* Highlight 
+ 
 .highlight {
-	position: absolute;
-	height: 60%; 
-	width: 100px; 
-	top: 25%; 
-	left: 0;
-	pointer-events: none;
-	opacity: 0.5;
+    position: absolute;
+    height: 60%; 
+    width: 100px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
 }
-
-
-/* active */
-
+ 
+ 
+/* active 
+ 
 input:focus ~ .highlight {
-	animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
 }
-
-
-/* Animations */
-
+ 
+ 
+/* Animations 
+ 
 @keyframes inputHighlighter {
-	from { background: #4a89dc; }
-	to 	{ width: 0; background: transparent; }
+    from { background: #4a89dc; }
+    to  { width: 0; background: transparent; }
 }
-
-
-/* Button */
-
+ 
+ 
+/* Button 
+ 
 .button {
   position: relative;
   display: inline-block;
@@ -303,20 +384,19 @@ input:focus ~ .highlight {
   transition: all 0.15s ease;
 }
 .button:focus { outline: 0; }
-
-
-/* Button modifiers */
-
+ 
+ 
+/* Button modifiers 
+ 
 .buttonBlue {
   background: #4a89dc;
   text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
 }
-
+ 
 .buttonBlue:hover { background: #357bd8; }
-
-
-/* Ripples container */
-
+ 
+/* Ripples container 
+ 
 .ripples {
   position: absolute;
   top: 0;
@@ -326,10 +406,10 @@ input:focus ~ .highlight {
   overflow: hidden;
   background: transparent;
 }
-
-
-/* Ripples circle */
-
+ 
+ 
+/* Ripples circle 
+ 
 .ripplesCircle {
   position: absolute;
   top: 50%;
@@ -341,50 +421,51 @@ input:focus ~ .highlight {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.25);
 }
-
+ 
 .ripples.is-active .ripplesCircle {
   animation: ripples .4s ease-in;
 }
-
-
-/* Ripples animation */
-
+ 
+ 
+/* Ripples animation 
+ 
 @keyframes ripples {
   0% { opacity: 0; }
-
+ 
   25% { opacity: 1; }
-
+ 
   100% {
     width: 200%;
     padding-bottom: 200%;
     opacity: 0;
   }
 }
-
+ 
 footer { text-align: center; }
-
+ 
 footer p {
-	color: #888;
-	font-size: 13px;
-	letter-spacing: .4px;
+    color: #888;
+    font-size: 13px;
+    letter-spacing: .4px;
 }
-
+ 
 footer a {
-	color: #4a89dc;
-	text-decoration: none;
-	transition: all .2s ease;
+    color: #4a89dc;
+    text-decoration: none;
+    transition: all .2s ease;
 }
-
+ 
 footer a:hover {
-	color: #666;
-	text-decoration: underline;
+    color: #666;
+    text-decoration: underline;
 }
-
+ 
 footer img {
-	width: 80px;
-	transition: all .2s ease;
+    width: 80px;
+    transition: all .2s ease;
 }
-
+ 
 footer img:hover { opacity: .83; }
-
+ 
 footer img:focus , footer a:focus { outline: none; }
+*/
