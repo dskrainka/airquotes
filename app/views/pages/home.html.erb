@@ -4,9 +4,9 @@
 	<div class="displayQuote">
 		<p>
 			<% @displayQuote = @quotes.sample %>
-			<%= @displayQuote.content %>
+			<%= @displayQuote.content if @displayQuote %>
 			<br>
-    		<span><%= @displayQuote.attribution.rjust(1) %></span>			
+    		<span><%= @displayQuote.attribution.rjust(1) if @displayQuote %></span>			
 		</p>
 	</div>
 
