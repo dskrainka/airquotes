@@ -11,13 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.text_area(:content, :value => "\"\"", :class => "textareastyle") %>
-  </div>
-  <div class="field">
-    <%= f.text_area(:attribution, :value => "-", :class => "textareastyle") %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <% if @quote %>
+    <div class="displayQuote">
+      <%= f.text_area(:content, :value => @quote.content, :class => "textareastyle") %>
+    </div>
+    <div class="displayQuote">
+      <span><%= f.text_area(:attribution, :value => @quote.attribution, :class => "textareastyle") %></span>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
+  <% else %>  
+    <div class="field">
+      <%= f.text_area(:content, :value => "\"\"", :class => "textareastyle") %>
+    </div>
+    <div class="field">
+      <%= f.text_area(:attribution, :value => "-", :class => "textareastyle") %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
+  <% end %>
+
 <% end %>

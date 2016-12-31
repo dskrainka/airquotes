@@ -1,22 +1,17 @@
-<p id="notice"><%= notice %></p>
 
-<div style="overflow:scroll; width:80%;height:20%" >
   <table>
-
     <tbody>
       <% @quotes.each do |quote| %>
         <tr>
           <td id="tableQuote"><%= quote.content %></td>
           <td id="spacer"></td>
-          <td><%= quote.attribution %></td>
+          <td><%= quote.attribution.tr('-','') %></td>
           <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
           <td><%= link_to 'Delete', quote, method: :delete %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
-
   <br>
-</div>
 
   <!-- %= #link_to 'New Quote', new_quote_path % --> 
