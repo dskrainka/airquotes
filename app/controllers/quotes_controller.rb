@@ -16,7 +16,9 @@ class QuotesController < ApplicationController
   # GET /quotes/new
   def new
     #@quote = Quote.new
-    @quote = current_user.quotes.build
+    @quote = current_user.quote.build
+    #@quote = current_user.quotes.build
+
   end
 
   # GET /quotes/1/edit
